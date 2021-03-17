@@ -1,11 +1,81 @@
-<!DOCTYPE html>
 <html lang="ja">
   <head>
-    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-feedly-mini="yes">
     <main>
-      <div id="app"></div>
+      <div id="app">
+        <ul class="accountList">
+          <li
+            class="accountList__item js-account-item"
+            data-follow="false"
+            data-id="1"
+          >
+            <div>
+              <div class="account__summary">
+                <div>
+                  <p class="account__name">ウサチャ</p>
+                  <p class="account__id">@usausacha</p>
+                </div>
+                <div>
+                  <button type="button" class="js-follow-btn followBtn">
+                    フォローする
+                  </button>
+                </div>
+              </div>
+              <p class="account__description">
+                ドレッシングパフェ専属スカウトマスコットのウサギの妹。3rdシーズンで学校を卒業しトライアングルのマネージャーに就任した後、ノンシュガーのマネージャーを務める。
+              </p>
+            </div>
+          </li>
+          <li
+            class="accountList__item js-account-item"
+            data-follow="true"
+            data-id="2"
+          >
+            <div>
+              <div class="account__summary">
+                <div>
+                  <p class="account__name">プニコン</p>
+                  <p class="account__id">@punicon</p>
+                </div>
+                <div>
+                  <button type="button" class="js-follow-btn followBtn">
+                    フォロー中
+                  </button>
+                </div>
+              </div>
+              <p class="account__description">
+                ユニコーンタイプのスカウトマスコット。夢川ゆいのマネージャー。産まれたばかりで「プニコン」としかしゃべれず、現時点では本能のままでしか行動できない。
+              </p>
+            </div>
+          </li>
+          <li
+            class="accountList__item js-account-item"
+            data-follow="false"
+            data-id="3"
+          >
+            <div>
+              <div class="account__summary">
+                <div>
+                  <p class="account__name">山本五十六</p>
+                  <p class="account__id">@iso_6</p>
+                </div>
+                <div>
+                  <button type="button" class="js-follow-btn followBtn">
+                    フォローする
+                  </button>
+                </div>
+              </div>
+              <p class="account__description">
+                日本の海軍軍人。最終階級は元帥海軍大将。第26、27代連合艦隊司令長官。海軍兵学校32期生。前線視察の際、ブーゲンビル島上空で戦死（海軍甲事件）。旧姓は高野。栄典は正三位大勲位功一級。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
